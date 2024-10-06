@@ -4,6 +4,7 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { FormEvent } from 'react';
 import { useRouter } from 'next/router';
+import AddItemButton from '@/components/AddItem';
 var image = '',
   name = '',
   price = '0.00',
@@ -11,15 +12,7 @@ var image = '',
 export default async function AddItemPage() {
   return (
     <main>
-      <Input onInput={onNameChanged}>Name</Input>
-      <Input type="image" onInput={onImageChanged}>
-        Image
-      </Input>
-      <Input type="number" onInput={onStockChanged}>
-        stock
-      </Input>
-      <Input onInput={onPriceChanged}>Price</Input>
-      <Button onClick={onAddButtonClick}> Add </Button>
+      <AddItemButton></AddItemButton>
     </main>
   );
 }
