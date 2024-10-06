@@ -3,8 +3,6 @@ import { File, PlusCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { ProductsTable } from './products-table';
 import { getProducts } from '@/lib/db';
-import { EventHandler, MouseEventHandler } from 'react';
-import { useRouter } from 'next/router';
 import { redirect } from 'next/navigation';
 
 export default async function ProductsPage({
